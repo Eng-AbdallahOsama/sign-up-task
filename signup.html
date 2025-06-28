@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+    <main >
+  
+        <div class="container d-flex justify-content-center">
+        <div class=" p-5 signup-box w-75 my-5 d-flex flex-column gap-3 text-center">
+            <h1 class="text-capitalize text-info">Smart login system</h1>
+
+            <input type="text" placeholder="Please enter your name" class="bg-opacity-50 form-control text-capitalize p-2" id="signUpName" >
+            <input type="text" oninput="validate()" placeholder="please enter your email" class="bg-opacity-50 form-control text-capitalize p-2" id="signUpEmail" >
+            <p class="alert alert-danger d-none" id="emailAlert">Please Enter Valid Email</p>
+            <input type="password" placeholder="please enter your password" class="bg-opacity-50 form-control text-capitalize p-2" id="signUpPass" >
+            <button id="signUpBtn" onclick="signUp()" class=" my-3 w-100 btn btn-outline-info"> Sign Up</button>
+
+            <p id="signupReq" class="alert alert-danger w-25 m-auto d-none">All inputs are required</p>
+            <p id="success" class="text-success d-none">Success</p>
+            <p id="EmailExist" class="text-danger d-none">This Email is exist</p>
+            <span class="text-white">You have an account? <a href="login.html" class="text-decoration-none text-white ">Signin</a></span>
+        </div>
+        </div>
+
+
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

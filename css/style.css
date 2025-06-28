@@ -1,0 +1,31 @@
+main {
+  min-height: 100vh;
+  background-color: #24353F;
+}
+
+.signup-box , .welcome-box {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+  height: fit-content;
+}
+
+input {
+  background-color: #24353F !important ; 
+  color: white !important;
+}
+
+::placeholder {
+  color: #79848C !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
+
+nav {
+  background-color: #24353F;
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
