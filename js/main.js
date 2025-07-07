@@ -109,7 +109,7 @@ function signUp(){
 
     // move to login page 
 
-    open('http://127.0.0.1:5500/login.html', target="_self");
+    open('/login.html', target="_self");
 
 
 }
@@ -137,7 +137,7 @@ function login(){
 
                 localStorage.setItem("userName" , usersArray[i].Name)
 
-                open("http://127.0.0.1:5500/home.html" , target="_self")
+                open("/home.html" , target="_self")
 
                 
 
@@ -183,6 +183,6 @@ if(userName){
 // logout function 
 
 logOutBtn.addEventListener("click" , function(){
-open('http://127.0.0.1:5500/login.html', target="_self");
+open('/login.html', target="_self");
 
 })
